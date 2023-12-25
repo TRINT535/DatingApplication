@@ -6,7 +6,7 @@
 }
 
 .card img {
-    transform: scale(1.0, 1.0 );
+    transform: scale(1.0, 1.0);
     transition-duration: 500ms;
     transition-timing-function: ease-out;
 }
@@ -30,6 +30,22 @@
     bottom: 0;
     opacity: 1;
 }
-.animate{
+
+.animate {
     transition: all 0.3s ease-in-out;
+}
+
+@keyframes fa-blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.is-online {
+    animation: fa-blink 1.5s linear infinite;
+    color: rgb(1, 190, 42);
 }
